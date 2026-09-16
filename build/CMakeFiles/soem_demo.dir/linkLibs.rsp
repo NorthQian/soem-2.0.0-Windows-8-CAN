@@ -1,0 +1,1 @@
+ "D:/soem-2.0.0-Windows-x86_64/soem-2.0.0-Windows-x86_64/lib/libsoem.a" "D:/soem-2.0.0-Windows-x86_64/soem-2.0.0-Windows-x86_64/import-libs/libwpcap.a" "D:/soem-2.0.0-Windows-x86_64/soem-2.0.0-Windows-x86_64/import-libs/libPacket.a" -lucrt -lws2_32 -lwinmm -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

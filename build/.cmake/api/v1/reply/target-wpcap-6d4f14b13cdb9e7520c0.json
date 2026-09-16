@@ -1,0 +1,49 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "D:/soem-2.0.0-Windows-x86_64/soem-2.0.0-Windows-x86_64/import-libs/libwpcap.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	},
+	"id" : "wpcap::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"name" : "wpcap",
+	"nameOnDisk" : "libwpcap.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "STATIC_LIBRARY"
+}

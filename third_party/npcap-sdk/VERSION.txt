@@ -1,0 +1,1 @@
+Npcap SDK 1.15 (headers only, from https://npcap.com/dist/npcap-sdk-1.15.zip)
