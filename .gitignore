@@ -1,7 +1,15 @@
 # ---- 构建产物 ----------------------------------------------------------
-# 构建统一走 build/（见 README「首次配置」）。里面是 CMakeCache、object
-# 文件和 soem_demo.exe，全部可以重新生成，没有需要保留的东西。
-build/
+# 构建统一走 build/（见 README「首次配置」）。
+#
+# build/ 目录本身和里面的 soem_demo.exe 要保留在仓库里（跟着发行版一起分发），
+# 所以不能整个目录一忽略了之——那样 git 就再也看不见 exe 了。改成逐条放行：
+#   build/*                忽略里面所有东西（含 CMakeFiles/ 等子目录）
+#   !build/soem_demo.exe   唯独把 exe 收回来
+#
+# 注意 git 不跟踪空目录：build/ 能在 clone 后存在，靠的正是被跟踪的
+# soem_demo.exe。哪天真把 exe 也删了跟踪，这个目录就会一起消失。
+build/*
+!build/soem_demo.exe
 
 # VS Code CMake Tools 扩展用的构建目录。本工程不使用这条路径。
 out/
