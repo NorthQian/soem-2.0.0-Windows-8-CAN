@@ -1,0 +1,21 @@
+# ---- 构建产物 ----------------------------------------------------------
+# 构建统一走 build/（见 README「首次配置」）。里面是 CMakeCache、object
+# 文件和 soem_demo.exe，全部可以重新生成，没有需要保留的东西。
+build/
+
+# VS Code CMake Tools 扩展用的构建目录。本工程不使用这条路径。
+out/
+
+# 上面那个扩展自动生成的预设文件，也就是它生成 out/ 的源头。
+# 哪天又拿 VS Code 打开这个工程，扩展会自己再写一份，不必提交。
+CMakePresets.json
+
+# ---- 注意：不要加 *.a / *.exe / *.o / *.lib 这类宽泛规则 ----------------
+# 本仓库有意提交了下面这些二进制文件，宽泛规则会把它们一起误伤：
+#
+#   lib/libsoem.a              预编译的 SOEM 静态库，链接必需
+#   import-libs/libwpcap.a     从本机 Npcap DLL 生成的导入库，链接必需
+#   import-libs/libPacket.a
+#   bin/*.exe                  随发行版附带的 SOEM 工具（slaveinfo、eepromtool 等）
+#
+# 所以这里只按目录精确排除，不用后缀通配。

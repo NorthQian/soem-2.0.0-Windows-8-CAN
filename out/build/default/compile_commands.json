@@ -1,8 +1,0 @@
-[
-{
-  "directory": "D:/soem-2.0.0-Windows-x86_64/soem-2.0.0-Windows-x86_64/out/build/default",
-  "command": "D:\\mingw64\\bin\\g++.exe -D_UCRT @CMakeFiles\\soem_demo.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\soem_demo.dir\\main.cpp.obj -c D:\\soem-2.0.0-Windows-x86_64\\soem-2.0.0-Windows-x86_64\\main.cpp",
-  "file": "D:/soem-2.0.0-Windows-x86_64/soem-2.0.0-Windows-x86_64/main.cpp",
-  "output": "CMakeFiles/soem_demo.dir/main.cpp.obj"
-}
-]
